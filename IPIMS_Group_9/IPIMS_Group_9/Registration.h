@@ -1,7 +1,6 @@
 #include "LoggingIn.h"
+
 #pragma once
-
-
 
 
 namespace IPIMSGroup9 {
@@ -12,6 +11,7 @@ namespace IPIMSGroup9 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace MySql::Data::MySqlClient;
 
 	/// <summary>
 	/// Summary for Registration
@@ -50,33 +50,20 @@ namespace IPIMSGroup9 {
 	private: System::Windows::Forms::RadioButton^  radioButtonDoctor;
 	private: System::Windows::Forms::RadioButton^  radioButtonPatient;
 	private: System::Windows::Forms::GroupBox^  groupBoxPersonalInformation;
-
 	private: System::Windows::Forms::Label^  labelLastName;
-
 	private: System::Windows::Forms::Label^  labelFirstName;
 	private: System::Windows::Forms::Label^  labelIdNumber;
 	private: System::Windows::Forms::TextBox^  textBoxIdNumber;
 	private: System::Windows::Forms::Label^  labelDateOfBirth;
 	private: System::Windows::Forms::TextBox^  textBoxDateOfBirth;
-
 	private: System::Windows::Forms::TextBox^  textBoxGender;
-
 	private: System::Windows::Forms::Label^  labelGender;
 	private: System::Windows::Forms::TextBox^  textBoxLastName;
 	private: System::Windows::Forms::TextBox^  textBoxFirstName;
 	private: System::Windows::Forms::GroupBox^  groupBoxAddressInformation;
-
-
-
-
-
 	private: System::Windows::Forms::TextBox^  textBoxCity;
-
 	private: System::Windows::Forms::Label^  labelCity;
 	private: System::Windows::Forms::TextBox^  textBoxStreetAddress;
-
-
-
 	private: System::Windows::Forms::Label^  labelStreetAddress;
 	private: System::Windows::Forms::TextBox^  textBoxZipCode;
 	private: System::Windows::Forms::Label^  labelZipCode;
@@ -86,15 +73,11 @@ namespace IPIMSGroup9 {
 	private: System::Windows::Forms::TextBox^  textBoxEmailAddress;
 	private: System::Windows::Forms::Label^  labelEmailAddress;
 	private: System::Windows::Forms::TextBox^  textBoxPhoneNumber;
-
 	private: System::Windows::Forms::Label^  labelPhoneNumber;
 	private: System::Windows::Forms::GroupBox^  groupBox2;
 	private: System::Windows::Forms::TextBox^  textBoxPassword;
-
 	private: System::Windows::Forms::Label^  labelPassword;
 	private: System::Windows::Forms::TextBox^  textBoxUsername;
-
-
 	private: System::Windows::Forms::Label^  labelUsername;
 	private: System::Windows::Forms::Button^  buttonRegister;
 	private: System::Windows::Forms::GroupBox^  groupBoxMedicalInformation;
@@ -798,8 +781,19 @@ namespace IPIMSGroup9 {
 		lIn->ShowDialog();
 
 
-
-
+		/*
+		String^ constring = L"datasource=localhost;port=3306;username=root;password=Group9IPIMS";
+		MySqlConnection^ conDataBase = gcnew MySqlConnection(constring);
+		MySqlCommand^ cmdDataBase = gcnew MySqlCommand("select * from database.edata;", conDataBase);
+		MySqlDataReader^ myReader;
+		try {
+			conDataBase->Open();
+			myReader = cmdDataBase->ExecuteReader();
+		}
+		catch (Exception^ ex){
+			MessageBox::Show(ex->Message);
+		}
+		*/
 
 
 	}
