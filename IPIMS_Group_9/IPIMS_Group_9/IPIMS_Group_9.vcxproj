@@ -11,11 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EditProfile.cpp" />
+    <ClCompile Include="EmergencyAlert.cpp" />
     <ClCompile Include="LoggingIn.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PatientSearch.cpp" />
     <ClCompile Include="Registration.cpp" />
     <ClCompile Include="ScheduleAppointment.cpp" />
     <ClCompile Include="UpdateHealthcare.cpp" />
+    <ClCompile Include="Welcome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
@@ -26,7 +30,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EditProfile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EmergencyAlert.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="LoggingIn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PatientSearch.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Registration.h">
@@ -38,9 +51,38 @@
     <ClInclude Include="UpdateHealthcare.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Welcome.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DataIPIMS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmergencyAlert.resx">
+      <DependentUpon>EmergencyAlert.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoggingIn.resx">
+      <DependentUpon>LoggingIn.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch.resx">
+      <DependentUpon>PatientSearch.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleAppointment.resx">
+      <DependentUpon>ScheduleAppointment.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHealthcare.resx">
+      <DependentUpon>UpdateHealthcare.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5C6C6C67-6C0B-4106-B4AE-D45F69523937}</ProjectGuid>
