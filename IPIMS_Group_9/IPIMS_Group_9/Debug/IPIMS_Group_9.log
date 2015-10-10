@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+﻿Build started 10/10/2015 10:55:14 AM.
+     1>Project "C:\Users\E860536\Documents\GitHub\CSE-360-Group-9-IPIMS\IPIMS_Group_9\IPIMS_Group_9\IPIMS_Group_9.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll" /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib main.cpp Registration.cpp ScheduleAppointment.cpp
+         main.cpp
+     1>main.cpp(29): error C2039: 'PatientSearch' : is not a member of 'IPIMSGroup9'
+     1>main.cpp(29): error C2065: 'PatientSearch' : undeclared identifier
+     1>main.cpp(29): error C2146: syntax error : missing ';' before identifier 'formPatientSearch'
+     1>main.cpp(29): error C2065: 'formPatientSearch' : undeclared identifier
+     1>main.cpp(30): error C2065: 'formPatientSearch' : undeclared identifier
+     1>main.cpp(32): error C2039: 'EditProfile' : is not a member of 'IPIMSGroup9'
+     1>main.cpp(32): error C2065: 'EditProfile' : undeclared identifier
+     1>main.cpp(32): error C2146: syntax error : missing ';' before identifier 'formEditProfile'
+     1>main.cpp(32): error C2065: 'formEditProfile' : undeclared identifier
+     1>main.cpp(33): error C2065: 'formEditProfile' : undeclared identifier
+         Registration.cpp
+         ScheduleAppointment.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\E860536\Documents\GitHub\CSE-360-Group-9-IPIMS\IPIMS_Group_9\IPIMS_Group_9\IPIMS_Group_9.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.63
+=======
 ﻿Build started 10/9/2015 11:48:19 AM.
      1>Project "C:\Users\Kavita\Documents\GitHub\CSE-360-Group-9\CSE-360-Group-9-IPIMS\IPIMS_Group_9\IPIMS_Group_9\IPIMS_Group_9.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
@@ -23,3 +48,4 @@
 Build succeeded.
 
 Time Elapsed 00:00:07.55
+>>>>>>> origin/francjobranch
