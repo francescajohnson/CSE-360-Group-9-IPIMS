@@ -3,26 +3,38 @@
 *.lo
 *.o
 *.obj
+*.sdf
+*.opensdf
 
 # Precompiled Headers
 *.gch
 *.pch
+*.sdf
+*.opensdf
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+*.sdf
+*.opensdf
 
 # Fortran module files
 *.mod
+*.sdf
+*.opensdf
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
+*.sdf
+*.opensdf
 
 # Executables
 *.exe
 *.out
 *.app
+*.sdf
+*.opensdf

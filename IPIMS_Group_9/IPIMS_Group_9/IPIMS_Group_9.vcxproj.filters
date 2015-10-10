@@ -44,18 +44,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Registration.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ScheduleAppointment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UpdateHealthcare.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LoggingIn.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Welcome.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -66,6 +54,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EmergencyAlert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggingIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleAppointment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateHealthcare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

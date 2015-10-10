@@ -1,3 +1,6 @@
+#include "UpdateHealthcare.h"
+#include "ScheduleAppointment.h"
+
 #pragma once
 
 namespace IPIMS_Group_9 {
@@ -332,18 +335,16 @@ namespace IPIMS_Group_9 {
 		// Change Welcome label to display name of user
 	}
 	private: System::Void scheduleToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		Application::EnableVisualStyles();
-		Application::SetCompatibleTextRenderingDefault(false);
-
-		IPIMS_Group_9::ScheduleAppointment formScheduleAppt;
-		Application::Run(%formScheduleAppt);
+		IPIMS_Group_9::ScheduleAppointment^ formScheduleAppt = gcnew ScheduleAppointment();
+		this->Hide();
+		formScheduleAppt->ShowDialog();
+		this->Show();
 	}
 	private: System::Void updatePatientToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		Application::EnableVisualStyles();
-		Application::SetCompatibleTextRenderingDefault(false);
-
-		IPIMS_Group_9::UpdateHealthcareCondition formUpdateHealthcare;
-		Application::Run(%formUpdateHealthcare);
+		IPIMS_Group_9::UpdateHealthcareCondition^ formUpdateHealthcare = gcnew UpdateHealthcareCondition();
+		this->Hide();
+		formUpdateHealthcare->ShowDialog();
+		this->Show();
 	}
 	};
 }
