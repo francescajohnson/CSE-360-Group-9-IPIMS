@@ -30,6 +30,12 @@
     <ClCompile Include="LoggingIn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Welcome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditProfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Registration.h">
@@ -44,10 +50,21 @@
     <ClInclude Include="LoggingIn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Welcome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditProfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DataIPIMS.sql">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UpdateHealthcare.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
