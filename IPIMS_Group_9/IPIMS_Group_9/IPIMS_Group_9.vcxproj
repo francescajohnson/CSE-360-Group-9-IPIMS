@@ -11,11 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EditProfile.cpp" />
+    <ClCompile Include="EmergencyAlert.cpp" />
     <ClCompile Include="LoggingIn.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PatientSearch.cpp" />
     <ClCompile Include="Registration.cpp" />
     <ClCompile Include="ScheduleAppointment.cpp" />
     <ClCompile Include="UpdateHealthcare.cpp" />
+    <ClCompile Include="Welcome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
@@ -26,7 +30,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EditProfile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EmergencyAlert.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="LoggingIn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PatientSearch.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Registration.h">
@@ -36,6 +49,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="UpdateHealthcare.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Welcome.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
