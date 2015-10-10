@@ -70,6 +70,11 @@ namespace IPIMSGroup9 {
 	private: System::Windows::Forms::ToolStripMenuItem^  searchRecordsToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolsToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  editProfileInformationToolStripMenuItem;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::TextBox^  textBoxFirstName;
+	private: System::Windows::Forms::Label^  labelDateOfBirth;
+	private: System::Windows::Forms::TextBox^  textBoxDateOfBirth;
+
 
 
 
@@ -115,6 +120,10 @@ namespace IPIMSGroup9 {
 			this->searchRecordsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->editProfileInformationToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxFirstName = (gcnew System::Windows::Forms::TextBox());
+			this->labelDateOfBirth = (gcnew System::Windows::Forms::Label());
+			this->textBoxDateOfBirth = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1->SuspendLayout();
 			this->menuStrip->SuspendLayout();
 			this->SuspendLayout();
@@ -125,7 +134,7 @@ namespace IPIMSGroup9 {
 			this->checkBoxEmergencyAlert->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->checkBoxEmergencyAlert->ForeColor = System::Drawing::Color::Red;
-			this->checkBoxEmergencyAlert->Location = System::Drawing::Point(588, 511);
+			this->checkBoxEmergencyAlert->Location = System::Drawing::Point(603, 485);
 			this->checkBoxEmergencyAlert->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->checkBoxEmergencyAlert->Name = L"checkBoxEmergencyAlert";
 			this->checkBoxEmergencyAlert->Size = System::Drawing::Size(184, 38);
@@ -139,11 +148,12 @@ namespace IPIMSGroup9 {
 			this->labelSymptoms->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->labelSymptoms->Font = (gcnew System::Drawing::Font(L"Arial", 10.5F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelSymptoms->Location = System::Drawing::Point(15, 95);
+			this->labelSymptoms->Location = System::Drawing::Point(12, 169);
 			this->labelSymptoms->Name = L"labelSymptoms";
 			this->labelSymptoms->Size = System::Drawing::Size(100, 27);
 			this->labelSymptoms->TabIndex = 2;
 			this->labelSymptoms->Text = L"Symptoms:";
+			this->labelSymptoms->Click += gcnew System::EventHandler(this, &UpdateHealthcareCondition::labelSymptoms_Click);
 			// 
 			// textBoxSymptoms
 			// 
@@ -153,14 +163,14 @@ namespace IPIMSGroup9 {
 			this->textBoxSymptoms->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBoxSymptoms->ForeColor = System::Drawing::SystemColors::InactiveCaption;
-			this->textBoxSymptoms->Location = System::Drawing::Point(120, 95);
+			this->textBoxSymptoms->Location = System::Drawing::Point(118, 169);
 			this->textBoxSymptoms->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBoxSymptoms->Multiline = true;
 			this->textBoxSymptoms->Name = L"textBoxSymptoms";
 			this->textBoxSymptoms->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textBoxSymptoms->Size = System::Drawing::Size(651, 235);
+			this->textBoxSymptoms->Size = System::Drawing::Size(651, 190);
 			this->textBoxSymptoms->TabIndex = 7;
-			this->textBoxSymptoms->Text = L"Symptoms";
+			this->textBoxSymptoms->Text = L"g";
 			this->textBoxSymptoms->TextChanged += gcnew System::EventHandler(this, &UpdateHealthcareCondition::textBoxSymptoms_TextChanged);
 			// 
 			// labelUpdateHealthcareConditions
@@ -168,7 +178,7 @@ namespace IPIMSGroup9 {
 			this->labelUpdateHealthcareConditions->AutoSize = true;
 			this->labelUpdateHealthcareConditions->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 22, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->labelUpdateHealthcareConditions->Location = System::Drawing::Point(16, 37);
+			this->labelUpdateHealthcareConditions->Location = System::Drawing::Point(9, 39);
 			this->labelUpdateHealthcareConditions->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelUpdateHealthcareConditions->Name = L"labelUpdateHealthcareConditions";
 			this->labelUpdateHealthcareConditions->Size = System::Drawing::Size(517, 42);
@@ -193,7 +203,7 @@ namespace IPIMSGroup9 {
 			// 
 			this->buttonSave->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonSave->Location = System::Drawing::Point(589, 559);
+			this->buttonSave->Location = System::Drawing::Point(616, 559);
 			this->buttonSave->Margin = System::Windows::Forms::Padding(4);
 			this->buttonSave->Name = L"buttonSave";
 			this->buttonSave->Size = System::Drawing::Size(153, 43);
@@ -206,7 +216,7 @@ namespace IPIMSGroup9 {
 			// 
 			this->buttonClear->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonClear->Location = System::Drawing::Point(589, 337);
+			this->buttonClear->Location = System::Drawing::Point(616, 388);
 			this->buttonClear->Margin = System::Windows::Forms::Padding(4);
 			this->buttonClear->Name = L"buttonClear";
 			this->buttonClear->Size = System::Drawing::Size(153, 43);
@@ -220,11 +230,11 @@ namespace IPIMSGroup9 {
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->groupBox1->Location = System::Drawing::Point(16, 337);
+			this->groupBox1->Location = System::Drawing::Point(23, 375);
 			this->groupBox1->Margin = System::Windows::Forms::Padding(4);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Padding = System::Windows::Forms::Padding(4);
-			this->groupBox1->Size = System::Drawing::Size(565, 265);
+			this->groupBox1->Size = System::Drawing::Size(558, 227);
 			this->groupBox1->TabIndex = 21;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Emergency Alert Conditions Include:";
@@ -234,7 +244,7 @@ namespace IPIMSGroup9 {
 			this->linkLabelLogout->AutoSize = true;
 			this->linkLabelLogout->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->linkLabelLogout->Location = System::Drawing::Point(717, 76);
+			this->linkLabelLogout->Location = System::Drawing::Point(717, 28);
 			this->linkLabelLogout->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->linkLabelLogout->Name = L"linkLabelLogout";
 			this->linkLabelLogout->Size = System::Drawing::Size(52, 17);
@@ -316,11 +326,51 @@ namespace IPIMSGroup9 {
 			this->editProfileInformationToolStripMenuItem->Size = System::Drawing::Size(239, 26);
 			this->editProfileInformationToolStripMenuItem->Text = L"Edit Profile Information";
 			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(12, 113);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(80, 17);
+			this->label2->TabIndex = 23;
+			this->label2->Text = L"First Name:";
+			// 
+			// textBoxFirstName
+			// 
+			this->textBoxFirstName->Location = System::Drawing::Point(127, 113);
+			this->textBoxFirstName->Margin = System::Windows::Forms::Padding(4);
+			this->textBoxFirstName->Name = L"textBoxFirstName";
+			this->textBoxFirstName->Size = System::Drawing::Size(272, 22);
+			this->textBoxFirstName->TabIndex = 25;
+			this->textBoxFirstName->TextChanged += gcnew System::EventHandler(this, &UpdateHealthcareCondition::textBoxFirstName_TextChanged);
+			// 
+			// labelDateOfBirth
+			// 
+			this->labelDateOfBirth->AutoSize = true;
+			this->labelDateOfBirth->Location = System::Drawing::Point(446, 118);
+			this->labelDateOfBirth->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->labelDateOfBirth->Name = L"labelDateOfBirth";
+			this->labelDateOfBirth->Size = System::Drawing::Size(91, 17);
+			this->labelDateOfBirth->TabIndex = 26;
+			this->labelDateOfBirth->Text = L"Date of Birth:";
+			// 
+			// textBoxDateOfBirth
+			// 
+			this->textBoxDateOfBirth->Location = System::Drawing::Point(574, 118);
+			this->textBoxDateOfBirth->Margin = System::Windows::Forms::Padding(4);
+			this->textBoxDateOfBirth->Name = L"textBoxDateOfBirth";
+			this->textBoxDateOfBirth->Size = System::Drawing::Size(93, 22);
+			this->textBoxDateOfBirth->TabIndex = 27;
+			// 
 			// UpdateHealthcareCondition
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(787, 613);
+			this->Controls->Add(this->textBoxDateOfBirth);
+			this->Controls->Add(this->labelDateOfBirth);
+			this->Controls->Add(this->textBoxFirstName);
+			this->Controls->Add(this->label2);
 			this->Controls->Add(this->menuStrip);
 			this->Controls->Add(this->linkLabelLogout);
 			this->Controls->Add(this->groupBox1);
@@ -367,10 +417,14 @@ namespace IPIMSGroup9 {
 	}
 
 	private: System::Void textBoxSymptoms_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-
+v
 
 	}
 	private: System::Void checkBoxEmergencyAlert_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 	}
-	};
+	private: System::Void labelSymptoms_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+private: System::Void textBoxFirstName_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+};
 }

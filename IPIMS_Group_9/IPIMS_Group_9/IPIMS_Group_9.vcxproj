@@ -43,6 +43,9 @@
     <None Include="DataIPIMS.sql" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateHealthcare.resx">
       <DependentUpon>UpdateHealthcare.h</DependentUpon>
     </EmbeddedResource>
