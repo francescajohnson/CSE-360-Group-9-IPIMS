@@ -14,6 +14,7 @@
     <ClCompile Include="EditProfile.cpp" />
     <ClCompile Include="LoggingIn.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PatientSearch.cpp" />
     <ClCompile Include="Registration.cpp" />
     <ClCompile Include="ScheduleAppointment.cpp" />
     <ClCompile Include="UpdateHealthcare.cpp" />
@@ -32,6 +33,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="LoggingIn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PatientSearch.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Registration.h">
