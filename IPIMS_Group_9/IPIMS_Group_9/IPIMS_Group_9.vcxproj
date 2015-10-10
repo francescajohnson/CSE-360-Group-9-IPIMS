@@ -59,6 +59,7 @@
     <None Include="DataIPIMS.sql" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.h</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +78,11 @@
     <EmbeddedResource Include="ScheduleAppointment.resx">
       <DependentUpon>ScheduleAppointment.h</DependentUpon>
     </EmbeddedResource>
+=======
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.h</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> origin/master
     <EmbeddedResource Include="UpdateHealthcare.resx">
       <DependentUpon>UpdateHealthcare.h</DependentUpon>
     </EmbeddedResource>
