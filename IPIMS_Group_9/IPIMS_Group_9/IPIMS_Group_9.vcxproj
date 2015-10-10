@@ -42,6 +42,11 @@
   <ItemGroup>
     <None Include="DataIPIMS.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UpdateHealthcare.resx">
+      <DependentUpon>UpdateHealthcare.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5C6C6C67-6C0B-4106-B4AE-D45F69523937}</ProjectGuid>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>

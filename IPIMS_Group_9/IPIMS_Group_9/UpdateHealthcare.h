@@ -1,5 +1,6 @@
 #pragma once
 
+
 namespace IPIMSGroup9 {
 
 	using namespace System;
@@ -14,6 +15,7 @@ namespace IPIMSGroup9 {
 	/// </summary>
 	public ref class UpdateHealthcareCondition : public System::Windows::Forms::Form
 	{
+		
 	public:
 		UpdateHealthcareCondition(void)
 		{
@@ -150,6 +152,7 @@ namespace IPIMSGroup9 {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->textBoxSymptoms->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->textBoxSymptoms->ForeColor = System::Drawing::SystemColors::InactiveCaption;
 			this->textBoxSymptoms->Location = System::Drawing::Point(120, 95);
 			this->textBoxSymptoms->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBoxSymptoms->Multiline = true;
@@ -157,7 +160,7 @@ namespace IPIMSGroup9 {
 			this->textBoxSymptoms->ScrollBars = System::Windows::Forms::ScrollBars::Both;
 			this->textBoxSymptoms->Size = System::Drawing::Size(651, 235);
 			this->textBoxSymptoms->TabIndex = 7;
-			this->textBoxSymptoms->Text = L"";
+			this->textBoxSymptoms->Text = L"Symptoms";
 			this->textBoxSymptoms->TextChanged += gcnew System::EventHandler(this, &UpdateHealthcareCondition::textBoxSymptoms_TextChanged);
 			// 
 			// labelUpdateHealthcareConditions
@@ -358,7 +361,7 @@ namespace IPIMSGroup9 {
 			MessageBox::Show("Please enter data");
 	}
 	private: System::Void buttonClear_Click(System::Object^  sender, System::EventArgs^  e) {
-		this->textBoxSymptoms->Text = "What are the symptoms?";
+		this->textBoxSymptoms->Text = "";
 		this->checkBoxEmergencyAlert->Checked = false;
 
 	}
