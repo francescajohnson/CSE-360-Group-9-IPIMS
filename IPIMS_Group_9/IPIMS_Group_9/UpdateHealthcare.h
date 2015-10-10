@@ -1,6 +1,6 @@
 #pragma once
 
-namespace IPIMSGroup9 {
+namespace IPIMS_Group_9 {
 
 	using namespace System;
 	using namespace System::ComponentModel;
