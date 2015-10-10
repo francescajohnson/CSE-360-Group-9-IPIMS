@@ -16,10 +16,10 @@ int main() {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	IPIMSGroup9::Registration formRegistration;
+	IPIMS_Group_9::Registration formRegistration;
 	Application::Run(%formRegistration);
 
-	IPIMSGroup9::LoggingIn formLoggingIn;
+	IPIMS_Group_9::LoggingIn formLoggingIn;
 	Application::Run(%formLoggingIn);
 
 	IPIMS_Group_9::Welcome formWelcome;
