@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EditProfile.cpp" />
+    <ClCompile Include="EmergencyAlert.cpp" />
     <ClCompile Include="LoggingIn.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PatientSearch.cpp" />
@@ -30,6 +31,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EditProfile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EmergencyAlert.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="LoggingIn.h">

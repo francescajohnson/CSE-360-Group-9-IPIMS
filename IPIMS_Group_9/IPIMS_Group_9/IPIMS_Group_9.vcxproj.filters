@@ -39,6 +39,9 @@
     <ClCompile Include="PatientSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EmergencyAlert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Registration.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PatientSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmergencyAlert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
