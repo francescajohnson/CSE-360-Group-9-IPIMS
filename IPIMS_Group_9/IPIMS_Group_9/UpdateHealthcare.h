@@ -56,92 +56,6 @@ namespace IPIMS_Group_9 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	protected:
-
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -179,7 +93,6 @@ namespace IPIMS_Group_9 {
 			this->checkBoxEmergencyAlert->TabIndex = 1;
 			this->checkBoxEmergencyAlert->Text = L"Emergency Alert";
 			this->checkBoxEmergencyAlert->UseVisualStyleBackColor = true;
-			this->checkBoxEmergencyAlert->CheckedChanged += gcnew System::EventHandler(this, &UpdateHealthcareCondition::checkBoxEmergencyAlert_CheckedChanged);
 			// 
 			// labelSymptoms
 			// 

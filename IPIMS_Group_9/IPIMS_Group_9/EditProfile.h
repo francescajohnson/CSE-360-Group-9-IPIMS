@@ -44,9 +44,6 @@ namespace IPIMS_Group_9 {
 	private: System::Windows::Forms::TextBox^  textBoxPassword;
 	private: System::Windows::Forms::Label^  labelConfirmPassword;
 	private: System::Windows::Forms::TextBox^  textBoxPasswordInitial;
-
-
-
 	private: System::Windows::Forms::GroupBox^  groupBoxMedicalInformation;
 	private: System::Windows::Forms::TextBox^  textBoxMedicalHistory;
 	private: System::Windows::Forms::Label^  labelMedicalHistory;
@@ -55,37 +52,9 @@ namespace IPIMS_Group_9 {
 	private: System::Windows::Forms::TextBox^  textBoxHealthInsurance;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  buttonEditProfile;
-
 	private: System::Windows::Forms::TextBox^  textBoxEmailAddress;
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::GroupBox^  groupBoxContactInformation;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^  labelEditProfile;
-
 	private: System::Windows::Forms::GroupBox^  groupBoxAddressInformation;
 	private: System::Windows::Forms::TextBox^  textBoxZipCode;
 	private: System::Windows::Forms::Label^  labelZipCode;
@@ -96,69 +65,6 @@ namespace IPIMS_Group_9 {
 	private: System::Windows::Forms::TextBox^  textBoxStreetAddress;
 	private: System::Windows::Forms::Label^  labelStreetAddress;
 	private: System::Windows::Forms::Label^  labelPassword;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private:
 		/// <summary>
 		/// Required designer variable.
