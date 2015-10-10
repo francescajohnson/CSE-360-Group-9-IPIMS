@@ -3,50 +3,26 @@
 *.lo
 *.o
 *.obj
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
 
 # Precompiled Headers
 *.gch
 *.pch
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
 
 # Fortran module files
 *.mod
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
 
 # Executables
 *.exe
 *.out
 *.app
-*.sdf
-*.suo
-*.opensdf
-*.vcxproj.user
